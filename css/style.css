@@ -5,6 +5,7 @@
     --container-width: 1270px;
     --container-padding: 15px;
     --secondary: rgba(15, 31, 28, 0.5);
+    --orange: #FF7C4E;
 }
 
 body{
@@ -79,6 +80,7 @@ input{
     max-width: unset;
     width: 894px;
     height: 940px;
+    pointer-events: none;
 
 }
 
@@ -542,3 +544,53 @@ input{
 
 
 /* subscribe end------------------------------------------------------------------------------------ */
+
+
+.footer{
+    color: var(--secondary);
+    padding: 56px 0 74px;
+}
+
+.logo--footer{
+    color: var(--orange);
+}
+
+.nav__list.nav__list--footer a.active::after,
+.nav__list.nav__list--footer a:hover::after {
+    display: none;
+}
+
+.nav__list.nav__list--footer a.active,
+.nav__list.nav__list--footer a:hover {
+    color: var(--orange);
+}
+
+.nav__list--footer a{}
+
+
+
+
+
+
+
+
+
+.btn{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 44px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    border-radius: 100px;
+    color: #fff;
+    
+}
+
+.btn:hover{
+    color:rgb(102, 102, 50) ;
+    transition: all 0.3s;
+}
+
+.btn:active{
+    position: relative;
+    top: 3px;
+}
