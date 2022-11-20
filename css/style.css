@@ -16,6 +16,11 @@ button{
     border: none;
 }
 
+input{
+    border: none;
+    outline: 0;
+}
+
 .none{
     display: none !important;
 }
@@ -133,6 +138,7 @@ button{
     padding: 13px 44px;
     background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
     border-radius: 100px;
+    color: #fff;
     
 }
 
@@ -407,3 +413,132 @@ button{
 
 
 /* customers end--------------------------------------------------------------------- */
+
+
+/* cta start ---------------------------------------------------------------------------*/
+
+.cta{
+    padding: 100px 0;
+
+}
+.cta__plate {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #fffff0;
+    border-radius: 60px;
+    min-height: 580px;
+    padding: 40px 15px;
+
+}
+
+.cta__title {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.cta__text {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: var(--secondary);
+}
+
+.cta__plate::before,
+.cta__plate::after {
+    position: absolute;
+    width: 63px;
+    height: 83px;
+    content: '';
+}
+
+.cta__plate::before{
+    left: 74px;
+    bottom: 56px;
+    background-image: url(../img/cta-el-02.svg);
+
+}
+.cta__plate::after{
+    top: 74px;
+    right: 80px;
+    background-image: url(../img/cta-el-01.svg);
+
+
+}
+
+
+
+
+
+/* cta end---------------------------------------------------------------------------------------- */
+
+/* subscribe start------------------------------------------------------------------------ */
+
+.subscribe {
+    padding: 35px 0 50px;
+}
+
+.subscribe__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe__title {
+    margin-bottom: 60px;
+    max-width: 494px;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 82px;
+}
+
+
+
+
+.subscribe-form {
+    padding: 12px 15px 12px 46px;
+    border-radius: 35px;
+    background-color: #ffffff;
+
+    display: flex;
+    column-gap: 20px;
+     
+}
+.subscribe-form__input {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--secondary);
+}
+.subscribe-form__btn {
+
+}
+
+.subscribe-form__btn{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 34px 86px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    border-radius: 35px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.subscribe-form__btn:hover{
+    color:rgb(102, 102, 50) ;
+    transition: all 0.3s;
+}
+
+.subscribe-form__btn:active{
+    position: relative;
+    top: 3px;
+}
+
+
+
+
+/* subscribe end------------------------------------------------------------------------------------ */
