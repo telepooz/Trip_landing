@@ -34,6 +34,7 @@ body{
     position: relative;
     padding-top: 44px;
     min-height: 940px;
+    color: #fff;
     background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
 }
 
@@ -61,13 +62,121 @@ body{
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     column-gap: 80px;
 }
-.nav__logo {
-}
+
 .nav__list {
+    display: flex;
+    column-gap: 80px;
+    font-size: 15px;
+    font-weight: 500;
 }
+
+.nav__list a{
+    position: relative;
+    
+}
+.nav__list a.active::after,
+ .nav__list a:hover::after{
+    left: 0;
+    right: 10px;
+    bottom: -6px;
+    content: '';
+    display: block;
+    position: absolute;
+    
+    height: 4px;
+    background-color: #C4C4C4;
+    border-radius: 100px;
+    
+}
+
+
+
 .nav__login {
+    display: flex;
+    column-gap: 25px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 44px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    border-radius: 100px;
+    
+}
+
+.btn:hover{
+    color:rgb(102, 102, 50) ;
+    transition: all 0.3s;
+}
+
+.btn:active{
+    position: relative;
+    top: 3px;
+}
+
+
+
+
+.logo{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+
+
+
+.header__content {
+   
+}
+.header__bage {
+    margin-bottom: 7px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 12px 30px;
+
+}
+.header__title {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 82px;
+}
+.header__text {
+    margin-bottom: 68px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    opacity: 0.5
+
+}
+.header__btn {
+    font-weight: 600;
+    font-size: 25px;
+    
+    padding: 27px 48px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    border-radius: 27px;
+}
+
+.header__btn:hover{
+    color:rgb(102, 102, 50) ;
+    transition: all 0.3s;
+}
+
+.header__btn:active{
+    position: relative;
+    top: 3px;
 }
 
 /* header end---------------------------------------------------------------------------------- */
